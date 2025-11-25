@@ -1,0 +1,37 @@
+body { margin: 0; overflow: hidden; background-color: #1a1a2e; font-family: 'Inter', sans-serif; color: #fff; }
+canvas { display: block; }
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border-radius: 50%;
+    border: 2px solid #ff79c6;
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px #ff79c6, 0 0 5px #ff79c6 inset;
+    transition: all 0.1s ease-out;
+}
+#instructions {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #bd93f9;
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+}
+#instructions strong { color: #50fa7b; }
+.held-indicator {
+    border-color: #f1fa8c !important;
+    box-shadow: 0 0 10px #f1fa8c, 0 0 5px #f1fa8c inset;
+}
